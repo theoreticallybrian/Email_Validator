@@ -1,0 +1,92 @@
+.home{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+form{
+    border: solid 1px black;
+    padding:10px 20px 10px 20px;
+    border-radius: 99px;
+    width: 30%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    @media screen and (max-width: 900px) {
+        width: 80vw;
+        margin: 20px;
+      }
+}
+
+input{
+    height: inherit;
+    width:90%;
+border: none;
+font-size: 20px;
+
+&:focus{
+    outline: none;
+}
+
+
+
+}
+
+button{
+    height:100%;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 62%,
+        rgba(252, 176, 69, 1) 100%
+      );
+    width: 40%;
+    border-radius: 99px;
+    padding: 0px 10px 0px 10px;
+
+&:hover{
+    cursor: pointer;
+    transform: scaleX(1.09);
+    transition: 200ms ease-in-out;
+}
+
+
+
+}
+
+
+.repsonse_good{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.response_bad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bad_icon{
+    color: red;
+    margin-left: 10px;
+}
+
+
+.table{
+    display: table;
+}
+
+.column{
+    display: table-column;
+}
